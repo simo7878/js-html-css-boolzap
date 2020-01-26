@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.template {
+  display: none;
+}
 .clearfix::after {
   content: '';
   display: table;
@@ -21,6 +24,14 @@ body {
   background-color: white;
   font-size: 14px;
   font-family: 'Lato', sans-serif;
+}
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 .container {
   width: 80%;
@@ -136,8 +147,54 @@ body {
 }
 .col-right .contact-active {
   width: 70%;
-  padding-right: 20px;
+
 }
 .col-right .contact-active small{
   color: rgb(177, 177, 177);
+}
+.col-right-messages {
+  display: none;
+  height: calc(100% - 140px);
+  padding: 40px;
+  background-color: lightgrey;
+  overflow-y: scroll;
+}
+.col-right-messages.active {
+  display: block;
+}
+.message {
+  min-width: 30%;
+  max-width: 60%;
+  padding: 5px;
+  margin: 10px;
+
+  border-radius: 5px;
+}
+.message-top {
+  display: flex;
+  justify-content: space-between;
+}
+.message-bottom {
+  text-align: right;
+}
+.message.sent {
+  float: right;
+  clear: both;
+  background-color: green;
+}
+
+.message.received {
+  float: left;
+  clear: both;
+  background: white;
+}
+.col-right-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: orange;
+}
+.col-right-footer .send-message {
+  width: 70%;
 }
