@@ -36,6 +36,13 @@ body {
   align-items: center;
   padding: 10px;
 }
+.icons {
+  color: rgb(177, 177, 177);
+}
+.icons i {
+  margin: 0 10px;
+  font-size: 22px;
+}
 .col_left {
   width: 35%;
   height: 100%;
